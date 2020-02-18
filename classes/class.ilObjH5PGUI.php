@@ -33,6 +33,7 @@ class ilObjH5PGUI extends ilObjectPluginGUI
     const CMD_DELETE_RESULTS = "deleteResults";
     const CMD_DELETE_RESULTS_CONFIRM = "deleteResultsConfirm";
     const CMD_EDIT_CONTENT = "editContent";
+    const CMD_EMBED_CONTENT = "embedContent";
     const CMD_EXPORT_CONTENT = "exportContent";
     const CMD_FINISH_CONTENTS = "finishContents";
     const CMD_IMPORT_CONTENT = "importContent";
@@ -130,6 +131,8 @@ class ilObjH5PGUI extends ilObjectPluginGUI
                     case self::CMD_DELETE_CONTENT:
                     case self::CMD_DELETE_CONTENT_CONFIRM:
                     case self::CMD_EDIT_CONTENT:
+                    case self::CMD_EMBED_CONTENT:
+                    case self::CMD_EXPORT_CONTENT:
                     case self::CMD_IMPORT_CONTENT:
                     case self::CMD_IMPORT_CONTENT_SELECT:
                     case self::CMD_MOVE_CONTENT_DOWN:

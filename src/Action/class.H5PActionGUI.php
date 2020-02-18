@@ -31,11 +31,14 @@ class H5PActionGUI
     const PLUGIN_CLASS_NAME = ilH5PPlugin::class;
     const CMD_H5P_ACTION = "h5pAction";
     const H5P_ACTION_CONTENT_TYPE_CACHE = "contentTypeCache";
+    const H5P_ACTION_CONTENTS = "contents";
     const H5P_ACTION_CONTENT_USER_DATA = "contentsUserData";
+    const H5P_ACTION_EMBED = "embed";
     const H5P_ACTION_FILES = "files";
     const H5P_ACTION_GET_TUTORIAL = "getTutorial";
     const H5P_ACTION_LIBRARIES = "libraries";
     const H5P_ACTION_LIBRARY_INSTALL = "libraryInstall";
+    const H5P_ACTION_LIBRARY_UPGRADE = "upgradeLibrary";
     const H5P_ACTION_LIBRARY_UPLOAD = "libraryUpload";
     const H5P_ACTION_REBUILD_CACHE = "rebuildCache";
     const H5P_ACTION_RESTRICT_LIBRARY = "restrictLibrary";
@@ -163,6 +166,7 @@ class H5PActionGUI
             case self::H5P_ACTION_GET_TUTORIAL:
             case self::H5P_ACTION_LIBRARIES:
             case self::H5P_ACTION_LIBRARY_INSTALL:
+            case self::H5P_ACTION_LIBRARY_UPGRADE:
             case self::H5P_ACTION_LIBRARY_UPLOAD:
             case self::H5P_ACTION_REBUILD_CACHE:
             case self::H5P_ACTION_RESTRICT_LIBRARY:
