@@ -243,9 +243,9 @@ class ShowContent
             "jsonContent"     => $safe_parameters,
             "fullScreen"      => $content["library"]["fullscreen"],
             "exportUrl"       => $this->ctrl->getLinkTarget($this, self::CMD_EXPORT_CONTENT, "", true, false),
-            "embedCode"       => <iframe src="' . $this->ctrl->getLinkTarget($this, self::CMD_EMBED_CONTENT, "", true, false) . '" width=":w" height=":h" frameborder="0" allowfullscreen="allowfullscreen"></iframe>,
-            "resizeCode"      => '<script src="/' . ilH5P::CORE_PATH . 'js/h5p-resizer.js" charset="UTF-8"></script>',,
-            "url"             => $this->ctrl->getLinkTarget($this, self::CMD_SHOW_CONTENT, "", false, false),,
+            "embedCode"       => '<iframe src="' . $this->ctrl->getLinkTarget($this, self::CMD_EMBED_CONTENT, "", true, false) . '" width=":w" height=":h" frameborder="0" allowfullscreen="allowfullscreen"></iframe>',
+            "resizeCode"      => '<script src="/' . ilH5P::CORE_PATH . 'js/h5p-resizer.js" charset="UTF-8"></script>',
+            "url"             => $this->ctrl->getLinkTarget($this, self::CMD_SHOW_CONTENT, "", false, false),
             "title"           => $h5p_content->getTitle(),
             "displayOptions"  => [
                 "frame"     => true,
